@@ -135,7 +135,7 @@ static BOOL WINAPI detour_wglSwapBuffers(hook<wglSwapBuffers_t>* hk, void* retur
 	if (gui::draw)
 	{
 		ImGui::SetNextWindowBgAlpha(1.f);
-		ImGui::Begin("hitdelay test 4", nullptr, ImGuiWindowFlags_AlwaysAutoResize);
+		ImGui::Begin("Yttrium", nullptr, ImGuiWindowFlags_AlwaysAutoResize);
 		{
 			if (ImGui::BeginTabBar("#TABBAR")) {
 
@@ -210,3 +210,4 @@ HWND gui::get_window()
 {
 	return window;
 }
+
